@@ -17,7 +17,7 @@
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <TargetLanguage>CS</TargetLanguage>
+    <TargetLanguage>VB</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
@@ -102,6 +102,41 @@
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
       <DatabaseSqlCmdVariable>AdoptionReportDB</DatabaseSqlCmdVariable>
     </ArtifactReference>
+    <ArtifactReference Include="DB Reference\SmartGovernanceDB.dacpac">
+      <HintPath>DB Reference\SmartGovernanceDB.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>SmartGovernanceDB</DatabaseSqlCmdVariable>
+    </ArtifactReference>
+    <ArtifactReference Include="DB Reference\DebtEngineDB.dacpac">
+      <HintPath>DB Reference\DebtEngineDB.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>DebtEngineDB</DatabaseSqlCmdVariable>
+    </ArtifactReference>
+    <ArtifactReference Include="DB Reference\AVMCOEESADB.dacpac">
+      <HintPath>DB Reference\AVMCOEESADB.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>AVMCOEESADB</DatabaseSqlCmdVariable>
+    </ArtifactReference>
+    <ArtifactReference Include="DB Reference\ProjectSummaryDB.dacpac">
+      <HintPath>DB Reference\ProjectSummaryDB.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>ProjectSummaryDB</DatabaseSqlCmdVariable>
+    </ArtifactReference>
+    <ArtifactReference Include="DB Reference\OutageTrackerDB.dacpac">
+      <HintPath>DB Reference\OutageTrackerDB.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>OutageTrackerDB</DatabaseSqlCmdVariable>
+    </ArtifactReference>
+    <ArtifactReference Include="DB Reference\MainSpringDB.dacpac">
+      <HintPath>DB Reference\MainSpringDB.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>MainSpringDB</DatabaseSqlCmdVariable>
+    </ArtifactReference>
+    <ArtifactReference Include="DB Reference\DiscoverEDSDB.dacpac">
+      <HintPath>DB Reference\DiscoverEDSDB.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>DiscoverEDSDB</DatabaseSqlCmdVariable>
+    </ArtifactReference>
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="AdoptionReportDB">
@@ -112,9 +147,44 @@
       <DefaultValue>AppVisionLensDB</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
+    <SqlCmdVariable Include="AVMCOEESADB">
+      <DefaultValue>AVMCOEESADB</DefaultValue>
+      <Value>$(SqlCmdVar__5)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="DebtEngineDB">
+      <DefaultValue>DebtEngineDB</DefaultValue>
+      <Value>$(SqlCmdVar__4)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="DiscoverEDSDB">
+      <DefaultValue>DiscoverEDSDB</DefaultValue>
+      <Value>$(SqlCmdVar__9)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="MainSpringDB">
+      <DefaultValue>MainSpringDB</DefaultValue>
+      <Value>$(SqlCmdVar__8)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="OutageTrackerDB">
+      <DefaultValue>OutageTrackerDB</DefaultValue>
+      <Value>$(SqlCmdVar__7)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="ProjectSummaryDB">
+      <DefaultValue>ProjectSummaryDB</DefaultValue>
+      <Value>$(SqlCmdVar__6)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="SmartGovernanceDB">
+      <DefaultValue>SmartGovernanceDB</DefaultValue>
+      <Value>$(SqlCmdVar__3)</Value>
+    </SqlCmdVariable>
   </ItemGroup>
   <ItemGroup>
     <None Include="DB Reference\AdoptionReportDB.dacpac" />
     <None Include="DB Reference\AppVisionLensDB.dacpac" />
+    <None Include="DB Reference\DebtEngineDB.dacpac" />
+    <None Include="DB Reference\SmartGovernanceDB.dacpac" />
+    <None Include="DB Reference\AVMCOEESADB.dacpac" />
+    <None Include="DB Reference\MainSpringDB.dacpac" />
+    <None Include="DB Reference\OutageTrackerDB.dacpac" />
+    <None Include="DB Reference\ProjectSummaryDB.dacpac" />
+    <None Include="DB Reference\DiscoverEDSDB.dacpac" />
   </ItemGroup>
 </Project>
